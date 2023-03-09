@@ -16,4 +16,6 @@ before_script:
 
 script:
   - docker --version 
+  - docker image prune --all
+  - docker-compose -f docker-compose-build.yaml build --parallel
   - docker-compose up
