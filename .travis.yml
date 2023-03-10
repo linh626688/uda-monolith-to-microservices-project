@@ -28,7 +28,9 @@ script:
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
   - docker tag udagram-reverseproxy linh626688/reverseproxy:v1
 
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo "$DOCKER_PASSWORD"
+  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+  - docker login --username=<your-username>
   - docker push linh626688/udagram-api-feed:v1
   - docker push linh626688/udagram-api-user:v1
   - docker push linh626688/udagram-frontend:v1
