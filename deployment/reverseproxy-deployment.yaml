@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-reverseproxy
-        image: linh626688/reverseproxy:v3
+        image: linh626688/reverseproxy:v4
         imagePullPolicy: Always
         resources:
           requests:

@@ -11,4 +11,4 @@ data:
   AWS_PROFILE: "default"
   JWT_SECRET: "testing"
   NODE_OPTIONS: --max-old-space-size=1024
-  URL: "http://localhost:8100"
+  URL: "http://localhost:8080"
