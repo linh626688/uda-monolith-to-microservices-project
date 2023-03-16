@@ -17,20 +17,20 @@ before_script:
 script:
   - docker --version 
   - docker build -t udagram-api-feed ./udagram-api-feed
-  - docker tag udagram-api-feed linh626688/udagram-api-feed:v1
+  - docker tag udagram-api-feed linh626688/udagram-api-feed:v3
 
   - docker build -t udagram-api-user ./udagram-api-user
-  - docker tag udagram-api-user linh626688/udagram-api-user:v1
+  - docker tag udagram-api-user linh626688/udagram-api-user:v3
 
   - docker build -t udagram-frontend  ./udagram-frontend
-  - docker tag udagram-frontend linh626688/udagram-frontend:v1
+  - docker tag udagram-frontend linh626688/udagram-frontend:v3
 
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
-  - docker tag udagram-reverseproxy linh626688/reverseproxy:v1
+  - docker tag udagram-reverseproxy linh626688/reverseproxy:v3
 
   - echo "$DOCKER_PASSWORD"
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-  - docker push linh626688/udagram-api-feed:v1
-  - docker push linh626688/udagram-api-user:v1
-  - docker push linh626688/udagram-frontend:v1
-  - docker push linh626688/reverseproxy:v1
+  - docker push linh626688/udagram-api-feed:v3
+  - docker push linh626688/udagram-api-user:v3
+  - docker push linh626688/udagram-frontend:v3
+  - docker push linh626688/reverseproxy:v3
