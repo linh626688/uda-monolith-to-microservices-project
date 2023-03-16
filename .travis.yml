@@ -23,7 +23,7 @@ script:
   - docker tag udagram-api-user linh626688/udagram-api-user:v3
 
   - docker build -t udagram-frontend  ./udagram-frontend
-  - docker tag udagram-frontend linh626688/udagram-frontend:v3
+  - docker tag udagram-frontend linh626688/udagram-frontend:v5
 
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
   - docker tag udagram-reverseproxy linh626688/reverseproxy:v3
