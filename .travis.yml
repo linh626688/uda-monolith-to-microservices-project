@@ -32,5 +32,5 @@ script:
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
   - docker push linh626688/udagram-api-feed:v3
   - docker push linh626688/udagram-api-user:v3
-  - docker push linh626688/udagram-frontend:v3
+  - docker push linh626688/udagram-frontend:v5
   - docker push linh626688/reverseproxy:v3
